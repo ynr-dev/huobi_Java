@@ -179,7 +179,7 @@ public class HuobiTradeService implements TradeClient {
   public List<Order> getOpenOrders(OpenOrdersRequest request) {
 
     InputChecker.checker()
-        .checkSymbol(request.getSymbol())
+        // .checkSymbol(request.getSymbol())
         .shouldNotNull(request.getAccountId(), "account-id")
         .checkRange(request.getSize(), 1, 500, "size");
 
